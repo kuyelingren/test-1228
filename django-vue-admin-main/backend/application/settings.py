@@ -98,15 +98,16 @@ WSGI_APPLICATION = "application.wsgi.application"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": DATABASE_ENGINE,
-        "NAME": DATABASE_NAME,
-        "USER": DATABASE_USER,
-        "PASSWORD": DATABASE_PASSWORD,
-        "HOST": DATABASE_HOST,
-        "PORT": DATABASE_PORT,
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'gx_day16',  # 数据库名字
+        'USER': 'root',
+        'PASSWORD': 'root123',
+        'HOST': '127.0.0.1',  # 那台机器安装了MySQL
+        'PORT': 3306,
     }
 }
+
 AUTH_USER_MODEL = "system.Users"
 USERNAME_FIELD = "username"
 
