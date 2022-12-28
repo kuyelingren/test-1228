@@ -102,7 +102,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'gx_day16',  # 数据库名字
         'USER': 'root',
-        'PASSWORD': 'root123',
+        'PASSWORD': '200652',
         'HOST': '127.0.0.1',  # 那台机器安装了MySQL
         'PORT': 3306,
     }
